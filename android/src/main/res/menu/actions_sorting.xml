@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_action_collections_sort_by_size"
+        android:showAsAction="always"
+        android:title="@string/sort">
+        <menu>
+            <item
+                android:id="@+id/action_sort_decreasing"
+                android:title="@string/decreasing" />
+            <item
+                android:id="@+id/action_sort_increasing"
+                android:title="@string/increasing" />
+        </menu>
+    </item>
+</menu>

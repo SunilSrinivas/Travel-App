@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ikramu.travelapp.android" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ikramu.travelapp.android.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ikramu.travelapp.android.ListOfModesActivity"
+            android:label="@string/title_activity_list_of_modes"
+            android:parentActivityName="com.ikramu.travelapp.android.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ikramu.travelapp.android.SortingActivity"
+            android:label="@string/title_activity_sorting"
+            android:parentActivityName="com.ikramu.travelapp.android.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ikramu.travelapp.android.DistancesActivity"
+            android:label="@string/title_activity_distances"
+            android:parentActivityName="com.ikramu.travelapp.android.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ikramu.travelapp.android.InsertActivity"
+            android:label="@string/title_activity_insert"
+            android:parentActivityName="com.ikramu.travelapp.android.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ikramu.travelapp.android.IndexingActivity"
+            android:label="@string/title_activity_indexing"
+            android:parentActivityName="com.ikramu.travelapp.android.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

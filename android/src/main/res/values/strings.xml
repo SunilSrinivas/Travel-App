@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TravelApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="source">Source</string>
+    <string name="destination">Destination</string>
+    <string name="show">Show</string>
+    <string name="title_activity_list_of_modes">List of Modes &amp; Routes</string>
+    <string name="price_sorting">Price Sorting</string>
+    <string name="title_activity_sorting">Sorting</string>
+    <string name="time_sorting">Time Sorting</string>
+    <string name="airways">Airways</string>
+    <string name="waterways">Waterways</string>
+    <string name="railways">Railways</string>
+    <string name="roadways">Roadways</string>
+    <string name="distances">Distance Stats</string>
+    <string name="sort">Sort</string>
+    <string name="decreasing">Decreasing</string>
+    <string name="increasing">Increasing</string>
+    <string name="title_activity_distances">Distance Stats</string>
+    <string name="distances_in_ascending_order">Distances in Ascending order</string>
+    <string name="insert_into_db">Insert into DB</string>
+    <string name="title_activity_insert">Insert Document</string>
+    <string name="source_country">Source Country</string>
+    <string name="source_state">Source State</string>
+    <string name="destination_state">Destination State</string>
+    <string name="distance">Distance</string>
+    <string name="price">Price</string>
+    <string name="time">Time</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_indexing">Indexing</string>
+
+</resources>

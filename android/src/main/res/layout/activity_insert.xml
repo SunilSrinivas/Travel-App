@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ikramu.travelapp.android.InsertActivity">
+
+
+    <EditText
+        android:id="@+id/edittext_source_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:hint="@string/source_country"
+        android:imeOptions="actionNext"
+        android:inputType="textCapCharacters" />
+
+    <EditText
+        android:id="@+id/edittext_source_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_toRightOf="@id/edittext_source_country"
+        android:hint="@string/source_state"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/edittext_destination_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_source_country"
+        android:layout_marginTop="@dimen/view_margin"
+        android:hint="@string/destination_state"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/edittext_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_destination_state"
+        android:layout_marginTop="@dimen/view_margin"
+        android:hint="@string/distance"
+        android:inputType="numberDecimal" />
+
+    <CheckBox
+        android:id="@+id/checkbox_airways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_distance"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:text="@string/airways" />
+
+    <EditText
+        android:id="@+id/edittext_airways_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edittext_waterways_price"
+        android:layout_below="@id/edittext_distance"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:layout_toRightOf="@id/checkbox_airways"
+        android:enabled="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/price"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:maxLength="9" />
+
+
+    <EditText
+        android:id="@+id/edittext_airways_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_distance"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:layout_toRightOf="@id/edittext_airways_price"
+        android:enabled="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/time"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:maxLength="6" />
+
+    <CheckBox
+        android:id="@+id/checkbox_waterways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_airways"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:text="@string/waterways" />
+
+    <EditText
+        android:id="@+id/edittext_waterways_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_airways_price"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:layout_toRightOf="@id/checkbox_waterways"
+        android:enabled="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/price"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:maxLength="9" />
+
+    <EditText
+        android:id="@+id/edittext_waterways_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_airways_time"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:layout_toRightOf="@id/edittext_waterways_price"
+        android:enabled="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/time"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:maxLength="6" />
+
+    <CheckBox
+        android:id="@+id/checkbox_railways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_waterways"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:text="@string/railways" />
+
+    <EditText
+        android:id="@+id/edittext_railways_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edittext_waterways_price"
+        android:layout_below="@id/edittext_waterways_price"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:layout_toRightOf="@id/checkbox_railways"
+        android:enabled="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/price"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:maxLength="9" />
+
+    <EditText
+        android:id="@+id/edittext_railways_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_waterways_time"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:layout_toRightOf="@id/edittext_railways_price"
+        android:enabled="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/time"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:maxLength="6" />
+
+    <CheckBox
+        android:id="@+id/checkbox_roadways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_railways"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:text="@string/roadways" />
+
+    <EditText
+        android:id="@+id/edittext_roadways_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edittext_waterways_price"
+        android:layout_below="@id/edittext_railways_price"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:layout_toRightOf="@id/checkbox_roadways"
+        android:enabled="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/price"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:maxLength="9" />
+
+    <EditText
+        android:id="@+id/edittext_roadways_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_railways_time"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:layout_toRightOf="@id/edittext_roadways_price"
+        android:enabled="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/time"
+        android:inputType="numberDecimal"
+        android:maxLength="6" />
+
+</RelativeLayout>

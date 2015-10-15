@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_airways" type="id" />
+    <item name="action_waterways" type="id" />
+    <item name="action_railways" type="id" />
+    <item name="action_roadways" type="id" />
+    <item name="progressBar_loading" type="id" />
+</resources>
